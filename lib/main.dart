@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:prueba_flutter/src/Pages/detailsPage.dart';
 import 'package:prueba_flutter/src/Pages/splashPage.dart';
-import 'package:prueba_flutter/src/Pages/testPage.dart';
+import 'package:prueba_flutter/src/Pages/home.dart';
 import 'package:prueba_flutter/src/providers/ClimaProvider.dart';
 
 void main() {

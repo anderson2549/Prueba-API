@@ -19,13 +19,15 @@ class _DetailsPageState extends State<DetailsPage> {
     final searchClima = Provider.of<ClimaProvider>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detalle del clima" + clima.title),
+        title: Text("Detalle del clima - " + clima.title),
       ),
       body: Stack(children: [
         HeaderWaveWidget(),
-        Container(
-            padding: EdgeInsets.all(10),
-            child: detalleClima(context, clima, searchClima)),
+        SingleChildScrollView(
+          child: Container(
+              padding: EdgeInsets.all(30),
+              child: detalleClima(context, clima, searchClima)),
+        ),
       ]),
     );
   }
@@ -38,9 +40,10 @@ class _DetailsPageState extends State<DetailsPage> {
         visualizarValor(context, "Tipo", clima.locationType),
         visualizarValor(context, "Coordenadas", clima.lattLong),
         Text("Pronosticos",
-            textAlign: TextAlign.center, style: Styles.textDetailBold),
+            textAlign: TextAlign.center,
+            style: Styles.textDetailBold.copyWith(fontSize: 20)),
         Container(
-            padding: EdgeInsets.all(15),
+            padding: EdgeInsets.all(0),
             child: _detalleWidget(searchClima: searchClima, clima: clima)),
       ],
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prueba_flutter/constants/header_widget.dart';
-import 'package:prueba_flutter/src/Pages/testPage.dart';
+import 'package:prueba_flutter/src/Pages/home.dart';
 import 'package:prueba_flutter/src/lib/your_splash-0.2.2/lib/src/base_splash.dart';
 import 'package:prueba_flutter/constants/StylesText.dart' as Styles;
 
